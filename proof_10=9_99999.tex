@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{mathtools} 
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\title{Proof 10=9.99999...}
+\author{Johannes Steppe}
+\date{December 2017}
+
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert} 
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert} 
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+In the following Proof I will show, that \[9.\overline{9}=10.\]
+\newline
+\newline As we know from the geometric series:
+for    \(     \abs{x} <1\) 
+
+\[
+{\displaystyle \sum_{i=0}^{\infty}}{x^i}=\frac{1}{1-x}
+\]
+We will need this later.
+\section{Proof}
+
+
+
+let  $M=9.\overline{9}$
+\[M=9+\frac{9}{10}+\frac{9}{100}+\frac{9}{1000}...\]
+
+so when we divide by 9\[\frac{1}{9}M=1+\frac{1}{10}+\frac{1}{100}+\frac{1}{1000}...\]
+
+and now we can write the infinite addition as a geometric series\[
+\frac{M}{9}=\sum_{i=0}^{\infty}{\left(\frac{1}{10}\right)^i}
+\]
+so as we can see from the introduction
+\[\frac{M}{9}=\frac{1}{1-\frac{1}{10}}=\frac{10}{9}\]
+so when we multiply by 9\[M=10=9.\overline{9}\]
+Q.E.D.
+
+
+
+\end{document}
+
+
+
+
+
+
+
+}
