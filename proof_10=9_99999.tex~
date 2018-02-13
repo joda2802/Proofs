@@ -1,5 +1,8 @@
 \documentclass{article}
-
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{mathtools}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
@@ -7,7 +10,8 @@
 \author{Johannes Steppe}
 \date{December 2017}
 
-
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
 
 \begin{document}
 
